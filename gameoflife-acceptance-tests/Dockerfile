@@ -17,6 +17,6 @@ USER seluser
 
 ENV MAVEN_HOME /opt/maven
 
-EXPOSE 9090
+EXPOSE 8081
 
 CMD ["mvn"]
