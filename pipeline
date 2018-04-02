@@ -5,10 +5,7 @@ pipeline {
         stage('Compile') {
             steps {
                 withMaven(maven : 'maven_3_5_0') {
-<<<<<<< HEAD
-=======
                 sh 'mvn clean compile'
->>>>>>> baab22fd012a081b68da335d502fc6b166e644e9
             }
         }
      }
@@ -23,14 +20,8 @@ pipeline {
             steps {
                 withMaven(maven : 'maven_3_5_0') {
                   sh 'mvn deploy'
-            }
-<<<<<<< HEAD
            }
         }         
- }
-=======
           }
-       }
     }
->>>>>>> baab22fd012a081b68da335d502fc6b166e644e9
 }
